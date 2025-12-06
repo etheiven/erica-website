@@ -80,25 +80,47 @@
 
       .gingerbread1 {
         justify-self: end;
-        width: 80px;
+        width: 300px;
+      }
+
+      .recipe-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+        width: 100%;
+        margin: 0 auto;
       }
 
       .recipe {
-        background-color: #6B1B12;
-        padding: 30px;
+        background: #6B1B12;
         height: 500px;
+        padding: 30px;
       }
 
       .recipe h1 {
+        font: "Luxurious Roman";
         color: #959F96;
-        font-family: Libre Baskerville;
       }
 
-      .recipe-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        margin-top: 20px;
+      .recipe-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .recipe-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .recipe-label p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 100px;
+        font-family: "Luxurious Roman";
+        color: #6B1B12;
       }
 
       .title-group {
@@ -174,20 +196,25 @@
       <div class="recipe">
         <h1>RECIPES</h1>
 
-        <div class="recipe-grid">
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
+        <div class="recipe-section">
 
-        <div class="recipe-labels">
-          <p>Peppermint Brownies</p>
-          <p>Cinnamon Swirl Cookies</p>
+          <div class="recipe-card">
+            <img class="recipe-img" src="brownies.jpg">
+            <p class="recipe-label">Peppermint Brownies</p>
+          </div>
+
+          <div class="recipe-card">
+            <img src="cookies.jpg" class="recipe-img">
+            <p class="recipe-label">Cinnamon Swirl Cookies</p>
+          </div>
+
         </div>
       </div>
+    </div>
 
-      <footer>
-        Stay Sweet, Come Back Soon...
-      </footer>
+    <footer>
+      Stay Sweet, Come Back Soon...
+    </footer>
 
     </div>
 
