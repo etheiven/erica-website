@@ -26,7 +26,6 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        width: 100%;
       }
 
       body {
@@ -79,57 +78,60 @@
         text-decoration: none;
       }
 
-      .gingerbread {
-        justify-self: end; 
-  width: 200px;
+      .gingerbread1 {
+        justify-self: end;
+        width: 80px;
       }
-      
-      .recipe {
-  background-color: #6B1B12;
-  padding: 30px;
-}
 
-.recipe-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-top: 20px;
-}
+      .recipe {
+        background-color: #6B1B12;
+        padding: 30px;
+        height: 500px;
+      }
+
+      .recipe h1 {
+        color: #959F96;
+        font-family: Libre Baskerville;
+      }
+
+      .recipe-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 20px;
+      }
+
       .title-group {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        background-color: #cbb59e;
         align-items: center;
+        background-color: #cbb59e;
         padding: 40px;
       }
 
       .title-group h1 {
-        grid-column: 1 / 3;
-        width: fit-content;
         font-size: 80px;
         font-family: "Luxurious Roman";
         color: #6B1B12;
+        margin: 0;
       }
 
       .title-group h2 {
-        grid-column: 2;
-        width: fit-content;
-        justify-self: start;
         font-family: "MonteCarlo";
         font-size: 65px;
         color: #053111;
-        margin-top: 10px;
+        margin: 10px 0 0 0;
       }
 
       .title-group h3 {
-        grid-column: 1 / 3;
-        margin-top: 10px;
         font-size: 22px;
         color: #053111;
+        margin-top: 10px;
       }
 
 
       footer {
+        width: 1200px;
         font-size: 30px;
         color: #C7AC92;
         font-family: Just Me Again Down Here;
@@ -160,25 +162,28 @@
       </header>
 
       <div class="title-group">
-        <h1 id="site-title">THE HOLIDAY BAKING VAULT</h1>
-        <h2>The Merry Mixer</h2>
-        <h3>Seasonal joy recipes to take a break from any stress whether its work, school, or just life. </h3>
-        <img class="gingerbread1" src="first gingerbread.png" alt="gingerbread">
+        <div class="text-block">
+          <h1>The Holiday Baking Vault</h1>
+          <h2>The Merry Mixer</h2>
+          <h3>Seasonal joy recipes to take a break from any stress whether it is work, school, or just life.</h3>
+        </div>
+
+        <img class="gingerbread1" src="gingerbread.png" alt="gingerbread baking">
       </div>
 
       <div class="recipe">
-  <h1>RECIPES</h1>
+        <h1>RECIPES</h1>
 
-  <div class="recipe-grid">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
+        <div class="recipe-grid">
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
 
-  <div class="recipe-labels">
-    <p>Peppermint Brownies</p>
-    <p>Cinnamon Swirl Cookies</p>
-  </div>
-</div>
+        <div class="recipe-labels">
+          <p>Peppermint Brownies</p>
+          <p>Cinnamon Swirl Cookies</p>
+        </div>
+      </div>
 
       <footer>
         Stay Sweet, Come Back Soon...
