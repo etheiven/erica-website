@@ -83,7 +83,7 @@
       font-size: 30px;
       color: #C7AC92;
       font-family: Just Me Again Down Here;
-      position: fixed;
+      position: relative;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -109,9 +109,25 @@
 
     .image-box {
       background: #6B1B12;
-      width: 800px; 
+      width: 800px;
       height: 400px;
       margin: 0 auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    p{
+      text-align:center;
+      font-family: Luxurious Roman;
+      font-size: 20px;
     }
   </style>
   <body>
@@ -138,6 +154,7 @@
       </h2>
 
       <div class=image-box>
+        <img src="ericajpg.jpg">
       </div>
 
       <div class=text>
