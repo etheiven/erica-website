@@ -37,6 +37,7 @@
         top: -20px;
         left: 70px;
         width: 280px;
+        pointer-events: none;/* code from chat to help move logo back to keep hover on home*/
       }
 
       header {
@@ -79,7 +80,7 @@
       }
 
       .gingerbread1 {
-        justify-self: end;//this code is from chatGPT to help posistion the image exactly at end
+        justify-self: end;/*this code is from chatGPT to help posistion the image exactly at end*/
         width: 350px;
       }
 
@@ -104,7 +105,7 @@
 
       .recipe-card {
         display: flex;
-        flex-direction: column;//this code is from w3 schools 
+        flex-direction: column;/*this code is from w3 schools*/ 
         align-items: center;
       }
 
@@ -150,19 +151,10 @@
         color: #053111;
         margin-top: 10px;
       }
-
-      .request-recipe {
-        background: url(dots.png);//this code is from chatGPT I was unaware on how to set image as background
-        height: 500px;
-      }
-
-      .request-recipe h1 {
-        padding: 50px;
+      
+      .request-recipe h1{
         text-align: center;
-        border: 5px solid #6B1B12;
-        border-radius: 50px;
-        text-align: center;
-        margin-top: 150px;
+        background: darkgreen;
       }
 
 
